@@ -4,10 +4,19 @@ Case Study – Beginner data analytics course
 ## Tableau Dashboard
 
 ## Project Overview
-The aim of the study is to determine whether there is a relationship between road width and traffic accident severity (injury or fatality) in urban traffic in Estonia.
+The aim of this project is to analyze whether road width is associated with traffic accident severity in urban areas of Estonia.
+Traffic safety is influenced by multiple factors, including road design, speed limits, and traffic conditions. Road width is often assumed to play a role in accident outcomes, as wider roads may encourage higher speeds, while narrower roads may increase conflict between road users.
+This project combines traffic accident data with road network data to explore how accident severity varies across different road widths. During the analysis, it became clear that road width alone does not fully explain accident severity. Therefore, additional factors such as speed limits and accident types were also considered to better understand the patterns observed in the data.
+The analysis focuses on accidents involving injuries or fatalities in Estonian cities between 2018 and 2025. Results are presented using aggregated statistics and visualizations to identify patterns rather than establish causation.
 
+## Research Question
+#### Primary question:
+Is there a relationship between road width and traffic accident severity in urban Estonia?
 
-## Problem Overview
+#### Supporting questions:
+How does accident severity vary across different road width categories?
+Does the relationship between road width and severity change when controlling for speed limits (e.g. 30 km/h vs 50 km/h)?
+What types of accidents are most common across different road widths, and how might they influence severity?
 
 ## Repository Structure
 
@@ -104,11 +113,46 @@ The dataset was cleaned to improve consistency and reliability. At the time of c
 ## Key Analysis
 The following aspects of ... were analyzed:
 
+Road width categories were created based on the distribution of values in the dataset. Most observations were concentrated between 6 and 10 meters, so narrower bins were used in this range to capture variation. Wider bins were used for larger road widths due to fewer observations.
+
+Road width categories were defined based on the distribution of values to ensure sufficient observations in each group, while also reflecting meaningful differences in road size.
+
 ## Key Findings
-#### 1. 
+The analysis shows that accident severity is not evenly distributed across road types and conditions, but is concentrated in specific scenarios.
+#### 1. Pedestrian mid-section crossings drive fatal outcomes
+Most fatal accidents occur in situations where a pedestrian crosses the road outside of intersections:
+Vehicle conflict with a pedestrian crossing the road mid-section (from left or right)
+At 50 km/h, the two most common fatal scenarios are:
+Crossing from left: 68 accidents, 4 fatal (5.88%)
+Crossing from right: 80 accidents, 4 fatal (5.0%)
+This indicates that unregulated pedestrian crossings are a key contributor to fatal outcomes.
 
-#### 2. 
+#### 2. Medium-width roads (9–11 m) at 50 km/h show elevated risk
+The highest fatality rates are observed on 9–11 meter roads, particularly at 50 km/h speed limits, when combined with pedestrian crossing scenarios.
+This suggests that:
+roads are wide enough to allow higher speeds
+but may lack sufficient pedestrian infrastructure or separation
 
+#### 3. Road conditions are not a primary factor
+Most fatal accidents occur when:
+road condition = “sõidutee on korras”
+This indicates that poor road condition is not a major driver of fatal outcomes in this dataset.
+
+#### 4. Time-of-day pattern (unexpected finding)
+For mid-section pedestrian crossings on 9–11 m roads:
+Daytime: ~7.4% fatality rate
+Nighttime: ~3.8% fatality rate
+Fatality rates are approximately twice as high during daytime.
+The exact cause cannot be determined from this dataset, but possible explanations include:
+higher traffic volume during daytime
+more frequent crossing attempts
+differences in traffic flow dynamics
+
+#### 5. Overall conclusion
+The results suggest that:
+Accident severity in urban Estonia is not primarily driven by road width alone, but by the interaction between road width, speed, and pedestrian behavior.
+The most critical risk scenario identified is:
+Pedestrians crossing mid-road on medium-width (9–11 m) urban roads with 50 km/h speed limits.
 
 ## Tableau Dashboard
 Visualizations include:
