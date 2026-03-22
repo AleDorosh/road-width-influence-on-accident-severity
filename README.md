@@ -162,6 +162,9 @@ This pattern suggests that medium-width urban roads may combine higher vehicle s
 The higher fatality rate observed on 9–11 m roads is primarily explained by pedestrian accidents, which have significantly higher fatality rates than other accident types. On these roads, pedestrian accidents reach a fatality rate of 5.25%, compared to below 1% for vehicle collisions.
 In addition, 9–11 m roads have a relatively high number of pedestrian accidents, amplifying their impact on overall fatality risk. This suggests that these road environments may combine higher vehicle speeds with substantial pedestrian exposure.
 
+### Finding 3: Speed amplifies pedestrian fatality risk
+Pedestrian accidents on mid-width roads (9–11 m) predominantly occur in the 31–50 km/h range, where the fatality rate reaches 5.54%. Higher speeds (51–70 km/h) further increase risk, but sample sizes are small. Narrower roads (≤5 m) generally have lower exposure, and the few accidents at very high speeds show extreme fatality rates but are statistically limited. This suggests that medium-width urban roads with moderate speed limits combine high pedestrian exposure and speeds sufficient to increase fatality risk, explaining the previously observed mid-width fatality peak.
+
 
 ## Tableau Dashboard
 Visualizations include:
