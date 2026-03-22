@@ -154,6 +154,13 @@ Accident severity in urban Estonia is not primarily driven by road width alone, 
 The most critical risk scenario identified is:
 Pedestrians crossing mid-road on medium-width (9–11 m) urban roads with 50 km/h speed limits.
 
+### Finding 1: Fatality risk varies non-linearly with road width
+Fatality risk per accident peaks on medium-width roads (9–11 m) and is lowest on the widest roads (15+ m). The fatality rate reaches 2.41% on 9–11 m roads, compared to 1.11% on roads wider than 15 m and 1.27% on 6–8 m roads.
+This pattern suggests that medium-width urban roads may combine higher vehicle speeds with ongoing pedestrian interaction, increasing the likelihood of fatal outcomes when accidents occur.
+
+
+
+
 ## Tableau Dashboard
 Visualizations include:
 
