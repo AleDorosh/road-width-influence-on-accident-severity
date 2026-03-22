@@ -118,7 +118,12 @@ Road width categories were created based on the distribution of values in the da
 Road width categories were defined based on the distribution of values to ensure sufficient observations in each group, while also reflecting meaningful differences in road size.
 
 ## Key Findings
-The analysis shows that accident severity is not evenly distributed across road types and conditions, but is concentrated in specific scenarios.
+Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, speed, and pedestrian behavior.
+
+The most critical risk scenario identified is pedestrians crossing mid-road on medium-width (9–11 m) urban roads with speed limits of 31–50 km/h.
+
+These environments combine sufficient width to allow higher vehicle speeds with continued pedestrian interaction, creating conditions where conflicts are both frequent and more likely to result in fatal outcomes.
+
 #### 1. Pedestrian mid-section crossings drive fatal outcomes
 Most fatal accidents occur in situations where a pedestrian crosses the road outside of intersections:
 Vehicle conflict with a pedestrian crossing the road mid-section (from left or right)
@@ -165,13 +170,31 @@ In addition, 9–11 m roads have a relatively high number of pedestrian accident
 ### Finding 3: Speed amplifies pedestrian fatality risk
 Pedestrian accidents on mid-width roads (9–11 m) predominantly occur in the 31–50 km/h range, where the fatality rate reaches 5.54%. Higher speeds (51–70 km/h) further increase risk, but sample sizes are small. Narrower roads (≤5 m) generally have lower exposure, and the few accidents at very high speeds show extreme fatality rates but are statistically limited. This suggests that medium-width urban roads with moderate speed limits combine high pedestrian exposure and speeds sufficient to increase fatality risk, explaining the previously observed mid-width fatality peak.
 
+### Finding 4: Crossing scenarios drive pedestrian fatality risk on mid-width roads
+On 9–11 m roads, the most critical pedestrian accidents occur when individuals cross the roadway mid-section. Two dominant scenarios are identified:
+Pedestrian crossing from the left: 6.67% fatality rate (5 of 75)
+Pedestrian crossing from the right: 5.15% fatality rate (5 of 97)
+These are the highest-risk pedestrian scenarios within this road width category.
+This indicates that unprotected or mid-block crossings represent a key safety issue on medium-width urban roads. The combination of crossing behavior and vehicle flow likely increases conflict exposure and reduces reaction time for drivers, contributing to higher fatality risk.
+
+### Finding 5: Daytime conditions are associated with higher pedestrian fatality rates
+On 9–11 m roads, pedestrian accidents during daylight (“Valge aeg”) show a higher fatality rate (7.45%) compared to nighttime conditions (“Pimeda aeg”, 3.85%).
+While reduced visibility is typically associated with higher risk, this pattern suggests that:
+Daytime conditions involve higher traffic volumes
+There is greater pedestrian activity and road crossing frequency
+Drivers may maintain higher speeds due to perceived safety
+As a result, increased exposure during the day may outweigh the visibility advantage, leading to a higher overall fatality rate.
+
+### Finding 6: Similar fatality patterns on very narrow roads are less statistically robust
+
+Very narrow roads (≤5 m) show pedestrian fatality rates comparable to medium-width roads in certain conditions (e.g., ~5.44% in the 31–50 km/h range). However, these observations are based on smaller sample sizes and lower overall accident counts.
+In contrast, 9–11 m roads combine:
+Higher accident volumes
+Consistent patterns across multiple factors (type, speed, scenario)
+This makes the observed relationships on medium-width roads more statistically reliable and analytically significant, supporting their prioritization in the analysis.
 
 ## Tableau Dashboard
 Visualizations include:
-
-
-## Recommendations
-Based on the analysis, ...:
 
 
 ## Author
