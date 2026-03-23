@@ -58,7 +58,7 @@ High pedestrian exposure significantly increases overall fatality risk.
 * Most fatal accidents: 31 - 50 km/h
 * Fatality rate: 5.54% (9 - 11 m)
 * Higher speeds → higher risk, but low sample sizes
-* 
+  
 #### Interpretation:
 Moderate urban speeds are sufficient to produce high fatality risk when pedestrian exposure is high.
 
@@ -86,7 +86,7 @@ Likely driven by higher traffic volume and pedestrian activity.
 
 * Fatality rate ~5.4% in some cases
 * Based on smaller samples
-* 
+  
 #### Interpretation:
 Patterns exist but are less statistically robust → focus remains on 9–11 m roads.
 
