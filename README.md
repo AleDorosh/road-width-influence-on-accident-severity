@@ -34,8 +34,12 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 * Lower on:
    - 6 - 8 m → 1.27%
    - 15+ m → 1.11%
-This suggests that medium-width urban roads may combine higher vehicle speeds with ongoing pedestrian interaction, increasing the likelihood of fatal outcomes when accidents occur.
-
+     
+#### Interpretation:
+Medium-width roads likely combine:
+* higher speeds
+* active pedestrian interaction
+  
 #### 2. Pedestrian accidents drive this pattern
 
 <img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/58f05195-c17e-4030-b4ed-7a42939c2e72" />
@@ -43,7 +47,9 @@ This suggests that medium-width urban roads may combine higher vehicle speeds wi
 * Pedestrian fatality rate (9 - 11 m): 5.25%
 * Vehicle collisions: <1%
 * High pedestrian volume amplifies overall risk
-Likely explanation is that these road environments may combine higher vehicle speeds with substantial pedestrian exposure.
+  
+#### Interpretation:
+High pedestrian exposure significantly increases overall fatality risk.
 
 #### 3. Speed amplifies pedestrian fatality risk
 
@@ -52,7 +58,9 @@ Likely explanation is that these road environments may combine higher vehicle sp
 * Most fatal accidents: 31 - 50 km/h
 * Fatality rate: 5.54% (9 - 11 m)
 * Higher speeds → higher risk, but low sample sizes
-This shows that medium-width urban roads with moderate speed limits combine high pedestrian exposure and speeds sufficient to increase fatality risk.
+* 
+#### Interpretation:
+Moderate urban speeds are sufficient to produce high fatality risk when pedestrian exposure is high.
 
 #### 4. Crossing pedestrians are the highest-risk scenario
 
@@ -60,7 +68,9 @@ This shows that medium-width urban roads with moderate speed limits combine high
 
 * Conflict from left → 5.68%
 * Conflict from right → 4.31%
-This indicates that unprotected or mid-block crossings represent a key safety issue on medium-width urban roads.
+  
+#### Interpretation:
+Unprotected / mid-block crossings are key risk points.
 
 #### 5. Daytime conditions show higher fatality rates
 
@@ -68,20 +78,35 @@ This indicates that unprotected or mid-block crossings represent a key safety is
 
 * Day (Valge aeg): 6.32%
 * Night (Pimeda aeg): 3.73%
-Increased traffic volume and potentially longer emergency response times during peak hours are plausible contributing factors.
+  
+#### Interpretation:
+Likely driven by higher traffic volume and pedestrian activity.
 
 #### 6. Similar patterns on narrow roads (≤5 m), but less reliable
 
 * Fatality rate ~5.4% in some cases
 * Based on smaller samples
-This makes the observed relationships on medium-width roads more statistically reliable and analytically significant, supporting their prioritization in the analysis.
+* 
+#### Interpretation:
+Patterns exist but are less statistically robust → focus remains on 9–11 m roads.
 
 ### Tableau Dashboard
 [https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1](https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1)
 
-### Methodology 
+### Method Overview
+* Filtered urban accidents (2018–2025)
+* Joined accident data with road width (GIS, 20m join)
+* Classified accidents:
+   - fatal (deaths > 0)
+   - non-fatal
+* Aggregated by:
+   - road width
+   - accident type
+   - speed
+   - scenario
+   - lighting
 
-Full data cleaning and processing methodology is documented in [Methodology.md](Methodology.md).
+Full details: Methodology.md [Methodology.md](Methodology.md).
 
 ### Repository Structure
 ```
@@ -106,9 +131,12 @@ road-width-accident-severity/
         ├── 05_pedestrian_fatality_by_scenario.sql
         └── 06_pedestrian_fatality_by_daytime.sql
 ```
-        
+### Limitations
+* Broad speed categories (31 - 50 km/h)
+* Small samples at higher speeds
+* Road width ≠ full road design (lanes, crossings, signals)
+  
 ### Author
-
 Aleksandra Doroshenko
 Junior Data Analyst Portfolio Project
 
