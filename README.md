@@ -70,7 +70,7 @@ Key driver: balance of speed + pedestrian interaction
 👉 9–11 m results are more consistent and reliable
 
 ## Tableau Dashboard
-👉 https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1
+[https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1](https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1)
 
 ## Methodology
 * Filtered to urban accidents only
