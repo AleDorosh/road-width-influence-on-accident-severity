@@ -1,7 +1,87 @@
-#  Road width influence on accident severity in urban Estonia
-Case Study – Beginner data analytics course
+## Road Width vs Accident Severity (Urban Estonia)
+
+### Key Insight
+Pedestrian fatalities peak on 9–11 m urban roads, driven by mid-road crossing behavior at 31–50 km/h, with higher risk during daytime.
+
+### Overview
+* Dataset: Urban traffic accidents with human victims in Estonia (2018–2025)
+* Goal: Does road width affect accident severity?
+* Approach: SQL filtering + Tableau analysis
+* Data size: 3,533 accidents | 67 fatalities | 4,019 injuries
+
+### Key Findings
+#### 1. Fatality risk peaks on medium-width roads (9–11 m)
+
+📊 (insert chart)
+
+* Highest fatality rate: 2.41% (9–11 m)
+* Lower on:
+   - 6–8 m → 1.27%
+   - 15+ m → 1.11%
+Key driver: balance of speed + pedestrian interaction
+
+#### 2. Pedestrian accidents drive this pattern
+
+📊 (insert chart)
+
+* Pedestrian fatality rate (9–11 m): 5.25%
+* Vehicle collisions: <1%
+* High pedestrian volume amplifies overall risk
+
+👉 Conclusion: mid-width roads combine speed + exposure
+
+#### 3. Speed amplifies pedestrian fatality risk
+
+📊 (insert chart)
+
+* Most fatal accidents: 31–50 km/h
+* Fatality rate: 5.54% (9–11 m)
+* Higher speeds → higher risk, but low sample sizes
+
+👉 Moderate speeds = high exposure + sufficient impact force
+
+#### 4. Crossing pedestrians are the highest-risk scenario
+
+📊 (insert chart)
+
+* Crossing from left → 6.67%
+* Crossing from right → 5.15%
+
+👉 Unprotected mid-road crossings are critical risk points
+
+#### 5. Daytime conditions show higher fatality rates
+
+📊 (insert chart)
+
+* Day (Valge aeg): 7.45%
+* Night (Pimeda aeg): 3.85%
+
+👉 Likely due to higher traffic + pedestrian activity
+
+#### 6. Similar patterns on narrow roads (≤5 m), but less reliable
+
+📊 (optional chart or omit)
+
+* Fatality rate ~5.4% in some cases
+* ased on smaller samples
+
+👉 9–11 m results are more consistent and reliable
 
 ## Tableau Dashboard
+👉 https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1
+
+## Methodology
+* Filtered to urban accidents only
+* Joined accident data with road width (GIS)
+* Categorized:
+ - Road width
+ - Speed limits
+
+* Excluded categories with:
+ - <5 observations (general analysis)
+ - <10 observations (speed analysis)
+
+********************************************************************
 
 ## Project Overview
 The aim of this project is to analyze whether road width is associated with traffic accident severity in urban areas of Estonia.
@@ -100,8 +180,6 @@ The dataset was cleaned to improve consistency and reliability. At the time of c
 * road characteristics (road width, speed limit, road type)
 * environmental conditions (weather, lighting, road surface)
 * spatial join quality (distance to matched road segment)
-
-#### Sample Dataset
 
 
 ## Tools Used 
