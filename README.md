@@ -5,7 +5,7 @@ Is there a relationship between road width and traffic accident severity in urba
 The analysis focuses on accidents involving injuries or fatalities in Estonian cities between 2018 and 2025. Results are presented using aggregated statistics and visualizations to identify patterns rather than establish causation.
 
 ### Key Insight
-Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, speed, and pedestrian behavior. Pedestrian fatalities peak on 9–11 m urban roads, driven by mid-road crossing behavior at 31–50 km/h, with higher risk during daytime.
+Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, speed, and pedestrian behavior. Pedestrian fatalities peak on 9 - 11 m urban roads, driven by mid-road crossing behavior at 31 - 50 km/h, with higher risk during daytime.
 
 ### Data
 #### Road Width Data
@@ -30,9 +30,9 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 
 <img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/0d424290-801a-44da-8b1a-c39f390d07ce" />
 
-* Highest fatality rate: 2.41% (9–11 m)
+* Highest fatality rate: 2.41% (9 - 11 m)
 * Lower on:
-   - 6–8 m → 1.27%
+   - 6 - 8 m → 1.27%
    - 15+ m → 1.11%
 This suggests that medium-width urban roads may combine higher vehicle speeds with ongoing pedestrian interaction, increasing the likelihood of fatal outcomes when accidents occur.
 
@@ -40,7 +40,7 @@ This suggests that medium-width urban roads may combine higher vehicle speeds wi
 
 <img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/58f05195-c17e-4030-b4ed-7a42939c2e72" />
 
-* Pedestrian fatality rate (9–11 m): 5.25%
+* Pedestrian fatality rate (9 - 11 m): 5.25%
 * Vehicle collisions: <1%
 * High pedestrian volume amplifies overall risk
 Likely explanation is that these road environments may combine higher vehicle speeds with substantial pedestrian exposure.
@@ -49,8 +49,8 @@ Likely explanation is that these road environments may combine higher vehicle sp
 
 <img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/b6251313-defc-4058-95c1-c2af82eb22e8" />
 
-* Most fatal accidents: 31–50 km/h
-* Fatality rate: 5.54% (9–11 m)
+* Most fatal accidents: 31 - 50 km/h
+* Fatality rate: 5.54% (9 - 11 m)
 * Higher speeds → higher risk, but low sample sizes
 This shows that medium-width urban roads with moderate speed limits combine high pedestrian exposure and speeds sufficient to increase fatality risk.
 
@@ -79,8 +79,33 @@ This makes the observed relationships on medium-width roads more statistically r
 ### Tableau Dashboard
 [https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1](https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1)
 
+### Methodology 
+
+Full data cleaning and processing methodology is documented in [Methodology.md](Methodology.md).
+
 ### Repository Structure
 
+road-width-accident-severity/
+├── README.md
+├── Methodology.md
+├── data/
+│   ├── raw_data/
+│   ├── filtered_data/
+│   └── cleaned_data.csv
+└── sql/
+    ├── cleaning/
+    │   ├── 01_filtering.sql
+    │   ├── 02_duplicates.sql
+    │   ├── 03_null_analysis.sql
+    │   └── 04_standarize_values.sql
+    └── analysis/
+        ├── 01_severity_by_width.sql
+        ├── 02_accident_type_by_width.sql
+        ├── 03_pedestrian_fatality_by_width.sql
+        ├── 04_pedestrian_fatality_by_speed.sql
+        ├── 05_pedestrian_fatality_by_scenario.sql
+        └── 06_pedestrian_fatality_by_daytime.sql
+        
 ### Author
 
 Aleksandra Doroshenko
