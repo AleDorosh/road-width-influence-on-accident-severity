@@ -1,4 +1,4 @@
-# Name
+#  Road width influence on accident severity in urban Estonia
 Case Study – Beginner data analytics course
 
 ## Tableau Dashboard
@@ -204,6 +204,6 @@ Aleksandra Doroshenko
 Junior Data Analyst Portfolio Project
 
 ## Acknowledgements
-This project was completed as part of the ... .
+This project was completed as part of the Data Analysts Advanced Training Program by BCS Koolitus.
 
 AI tools were used during the learning process to help review SQL queries, clarify concepts, and improve documentation. All analysis, data processing, and conclusions were performed and validated by the author.
