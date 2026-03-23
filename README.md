@@ -1,6 +1,6 @@
 ## Road Width vs Accident Severity (Urban Estonia)
 
-## Research Question
+### Research Question
 Is there a relationship between road width and traffic accident severity in urban Estonia?
 The analysis focuses on accidents involving injuries or fatalities in Estonian cities between 2018 and 2025. Results are presented using aggregated statistics and visualizations to identify patterns rather than establish causation.
 
@@ -24,7 +24,6 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 ### Data lineage
 
 <img width="700" height="451" alt="image" src="https://github.com/user-attachments/assets/428371a8-8a7d-4ad7-8d07-ac085822f372" />
-
 
 ### Key Findings
 #### 1. Fatality risk peaks on medium-width roads (9–11 m)
@@ -69,7 +68,6 @@ This indicates that unprotected or mid-block crossings represent a key safety is
 
 * Day (Valge aeg): 6.32%
 * Night (Pimeda aeg): 3.73%
-
 Increased traffic volume and potentially longer emergency response times during peak hours are plausible contributing factors.
 
 #### 6. Similar patterns on narrow roads (≤5 m), but less reliable
@@ -78,17 +76,17 @@ Increased traffic volume and potentially longer emergency response times during 
 * Based on smaller samples
 This makes the observed relationships on medium-width roads more statistically reliable and analytically significant, supporting their prioritization in the analysis.
 
-## Tableau Dashboard
+### Tableau Dashboard
 [https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1](https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1)
 
-## Repository Structure
+### Repository Structure
 
-## Author
+### Author
 
 Aleksandra Doroshenko
 Junior Data Analyst Portfolio Project
 
-## Acknowledgements
+### Acknowledgements
 This project was completed as part of the Data Analysts Advanced Training Program by BCS Koolitus.
 
 AI tools were used during the learning process to help review SQL queries, clarify concepts, and improve documentation. All analysis, data processing, and conclusions were performed and validated by the author.
