@@ -84,7 +84,7 @@ This makes the observed relationships on medium-width roads more statistically r
 Full data cleaning and processing methodology is documented in [Methodology.md](Methodology.md).
 
 ### Repository Structure
-
+```
 road-width-accident-severity/
 ├── README.md
 ├── Methodology.md
@@ -105,6 +105,7 @@ road-width-accident-severity/
         ├── 04_pedestrian_fatality_by_speed.sql
         ├── 05_pedestrian_fatality_by_scenario.sql
         └── 06_pedestrian_fatality_by_daytime.sql
+```
         
 ### Author
 
