@@ -12,7 +12,8 @@ Pedestrian fatalities peak on 9–11 m urban roads, driven by mid-road crossing 
 ### Key Findings
 #### 1. Fatality risk peaks on medium-width roads (9–11 m)
 
-📊 (insert chart)
+<img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/0d424290-801a-44da-8b1a-c39f390d07ce" />
+
 
 * Highest fatality rate: 2.41% (9–11 m)
 * Lower on:
@@ -22,7 +23,8 @@ Key driver: balance of speed + pedestrian interaction
 
 #### 2. Pedestrian accidents drive this pattern
 
-📊 (insert chart)
+<img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/58f05195-c17e-4030-b4ed-7a42939c2e72" />
+
 
 * Pedestrian fatality rate (9–11 m): 5.25%
 * Vehicle collisions: <1%
@@ -32,7 +34,8 @@ Key driver: balance of speed + pedestrian interaction
 
 #### 3. Speed amplifies pedestrian fatality risk
 
-📊 (insert chart)
+<img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/b6251313-defc-4058-95c1-c2af82eb22e8" />
+
 
 * Most fatal accidents: 31–50 km/h
 * Fatality rate: 5.54% (9–11 m)
@@ -42,25 +45,24 @@ Key driver: balance of speed + pedestrian interaction
 
 #### 4. Crossing pedestrians are the highest-risk scenario
 
-📊 (insert chart)
+<img width="485" height="148" alt="image" src="https://github.com/user-attachments/assets/28e83e13-0b0b-448f-b2a6-8990d67a71af" />
 
-* Crossing from left → 6.67%
-* Crossing from right → 5.15%
+
+* Conflict from left → 5.68%
+* Conflict from right → 4.31%
 
 👉 Unprotected mid-road crossings are critical risk points
 
 #### 5. Daytime conditions show higher fatality rates
 
-📊 (insert chart)
+<img width="485" height="148" alt="image" src="https://github.com/user-attachments/assets/d65ea72d-2ac7-41b0-9fb3-cb7910939f73" />
 
-* Day (Valge aeg): 7.45%
-* Night (Pimeda aeg): 3.85%
+* Day (Valge aeg): 6.32%
+* Night (Pimeda aeg): 3.73%
 
 👉 Likely due to higher traffic + pedestrian activity
 
 #### 6. Similar patterns on narrow roads (≤5 m), but less reliable
-
-📊 (optional chart or omit)
 
 * Fatality rate ~5.4% in some cases
 * ased on smaller samples
