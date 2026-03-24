@@ -120,9 +120,10 @@ road-width-accident-severity/
 ├── README.md
 ├── Methodology.md
 ├── data/
-│   ├── raw_data/
-│   ├── filtered_data/
+│   ├── raw_data.csv
+│   ├── filtered_data.csv
 │   └── cleaned_data.csv
+│   └── map_preview.png
 └── sql/
     ├── cleaning/
     │   ├── 01_filtering.sql
