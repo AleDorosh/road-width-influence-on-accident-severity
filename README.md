@@ -112,7 +112,7 @@ Patterns exist but are less statistically robust → focus remains on 9–11 m r
    - scenario
    - lighting
 
-Full details: Methodology.md [Methodology.md](Methodology.md).
+Full details: [Methodology.md](Methodology.md).
 
 ### Repository Structure
 ```
