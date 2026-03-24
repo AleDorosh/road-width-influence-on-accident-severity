@@ -25,11 +25,11 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 
 Accident points joined to road width polygons using QGIS spatial join.
 
-<img src="data/map_preview.png" width="600"/>
+<img width="600" height="450" src="data/map_preview.png"/>
 
 ### Data lineage
 
-<img width="700" height="451" alt="image" src="https://github.com/user-attachments/assets/428371a8-8a7d-4ad7-8d07-ac085822f372" />
+<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/428371a8-8a7d-4ad7-8d07-ac085822f372" />
 
 ### Key Findings
 #### 1. Fatality risk peaks on medium-width roads (9–11 m)
