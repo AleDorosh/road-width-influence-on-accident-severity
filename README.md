@@ -21,7 +21,7 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 * CSV Accessed: March 2026
 * License: CC BY 3.0
 
-### Spatial Data
+#### Spatial Data
 
 Accident points joined to road width polygons using QGIS spatial join.
 
