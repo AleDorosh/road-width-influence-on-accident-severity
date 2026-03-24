@@ -124,7 +124,7 @@ road-width-accident-severity/
     │   ├── 03_null_analysis.sql
     │   └── 04_standarize_values.sql
     └── analysis/
-        ├── 01_severity_by_width.sql
+        ├── 01_fatality_rate_by_width.sql
         ├── 02_accident_type_by_width.sql
         ├── 03_pedestrian_fatality_by_width.sql
         ├── 04_pedestrian_fatality_by_speed.sql
