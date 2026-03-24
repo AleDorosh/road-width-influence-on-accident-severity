@@ -25,7 +25,7 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 
 Accident points joined to road width polygons using QGIS spatial join.
 
-![Spatial join map <img src="data/map_preview.png" width="600"/>](data/map_preview.png)
+<img src="data/map_preview.png" width="600"/>
 
 ### Data lineage
 
