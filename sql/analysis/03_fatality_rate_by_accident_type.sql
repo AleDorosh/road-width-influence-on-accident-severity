@@ -5,7 +5,6 @@ SELECT
     SUM(CASE WHEN deaths > 0 THEN 1 ELSE 0 END) AS fatal_accidents,
     ROUND(100.0 * SUM(CASE WHEN deaths > 0 THEN 1 ELSE 0 END) / COUNT(*), 2) AS fatal_rate_percent
 FROM accidents_cleaned
-WHERE accident_type = 'Jalakäijaõnnetus'
 GROUP BY width_category, accident_type
 ORDER BY CASE
     WHEN width_category = '≤5 m' THEN 1
