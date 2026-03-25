@@ -94,7 +94,7 @@ Likely driven by higher traffic volume and pedestrian activity.
 * Based on smaller samples
   
 #### Interpretation:
-Patterns exist but are less statistically robust → focus remains on 9–11 m roads.
+Patterns exist but are less statistically robust → focus remains on 9 - 11 m roads.
 
 ### Tableau Dashboard
 [https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1](https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1)
