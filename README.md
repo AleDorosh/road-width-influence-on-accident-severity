@@ -1,120 +1,136 @@
-## Road Width vs Accident Severity (Urban Estonia)
+# Road Width vs Accident Severity (Urban Estonia)
 
-### Research Question
-Is there a relationship between road width and traffic accident severity in urban Estonia?
-The analysis focuses on accidents involving injuries or fatalities in Estonian cities between 2018 and 2025. Results are presented using aggregated statistics and visualizations to identify patterns rather than establish causation.
+Does road width influence accident severity in urban Estonia, or is something else driving the risk?
 
-### Key Insight
-Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, speed, and pedestrian behavior. Pedestrian fatalities peak on 9 - 11 m urban roads, driven by mid-road crossing behavior at 31 - 50 km/h, with higher risk during daytime.
+---
 
-### Data
-#### Road Width Data
-* Dataset: TN.RoadTransportNetwork.RoadWidth Provider: Eesti topograafia andmekogu - Maa- ja Ruumiamet (Estonian Topographic Database - Republic of Estonia Land and Spatial Development Board)
-* Metadata: https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/metadata/bf38a8fc-96f1-4d34-9130-18160e489514
-* Service endpoint (WFS): https://inspire.geoportaal.ee/geoserver/TN_transportetak/wfs, TN.RoadTransportNetwork.Roadwidth
-* Accessed: March 2026
-* Licence: https://geoportaal.maaruum.ee/opendata-licence (CC BY 4.0)
+## Terms
 
-#### Traffic Accident Data
-* Dataset: Inimkannatanutega liiklusõnnetuste andmed (Traffic accidents with casualties) Provider: Eesti Transpordiamet, Andmete teabevärav (Estonian Transport Administration via the Estonian Open Data Portal
-* Dataset page: https://andmed.eesti.ee/datasets/inimkannatanutega-liiklusonnetuste-andmed,
-* CSV Accessed: March 2026
-* License: CC BY 3.0
+| Term | Meaning |
+|---|---|
+| Fatality rate | Percentage of accidents in a given group that resulted in at least one death. |
+| Mid-section / mid-block crossing | A pedestrian crossing point located between intersections, typically without traffic signals. |
+| Conflict from left / right | The direction the vehicle approached from, relative to the pedestrian, at the moment of impact. |
+| Pedestrian exposure | The degree to which pedestrians are present and interacting with vehicle traffic in a given location. |
+| Spatial join | A GIS operation that combines two datasets based on their geographic location rather than a shared ID column. |
 
-#### Spatial Data
+---
 
-Accident points joined to road width polygons using QGIS spatial join.
+## Research question
 
-<img width="600" height="450" src="data/map_preview.png"/>
+Is there a relationship between road width and traffic accident severity in urban Estonia? The analysis covers accidents involving injuries or fatalities in Estonian cities between 2018 and 2025. Results are presented as aggregated statistics and visualizations to identify patterns, not to establish causation.
+
+---
+
+## Data
+
+#### Road width data
+
+- Dataset: TN.RoadTransportNetwork.RoadWidth. Provider: Eesti topograafia andmekogu - Maa- ja Ruumiamet (Estonian Topographic Database - Republic of Estonia Land and Spatial Development Board)
+- Metadata: https://metadata.geoportaal.ee/geonetwork/srv/eng/catalog.search#/metadata/bf38a8fc-96f1-4d34-9130-18160e489514
+- Service endpoint (WFS): https://inspire.geoportaal.ee/geoserver/TN_transportetak/wfs, TN.RoadTransportNetwork.Roadwidth
+- Accessed: March 2026
+- Licence: CC BY 4.0
+
+#### Traffic accident data
+
+- Dataset: Inimkannatanutega liiklusõnnetuste andmed (Traffic accidents with casualties). Provider: Eesti Transpordiamet, via the Estonian Open Data Portal
+- Dataset page: https://andmed.eesti.ee/datasets/inimkannatanutega-liiklusonnetuste-andmed
+- Accessed: March 2026
+- License: CC BY 3.0
+
+#### Spatial data
+
+Accident points joined to road width polygons using a QGIS spatial join (20m).
+
+![Map preview](./data/map_preview.png)
 
 ### Data lineage
 
-<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/428371a8-8a7d-4ad7-8d07-ac085822f372" />
+![Data lineage diagram](./data/data_lineage.png)
 
-### Key Findings
-#### 1. Fatality risk peaks on medium-width roads (9–11 m)
+---
 
-<img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/0d424290-801a-44da-8b1a-c39f390d07ce" />
+## Method overview
 
-* Highest fatality rate: 2.41% (9 - 11 m)
-* Lower on:
-   - 6 - 8 m → 1.27%
-   - 15+ m → 1.11%
-     
-#### Interpretation:
-Medium-width roads likely combine:
-* higher speeds
-* active pedestrian interaction
-  
+- Filtered to urban accidents, 2018-2025, involving at least one injury or fatality
+- Joined accident points to road width polygons via spatial join (GIS, 20m)
+- Classified each accident as fatal (deaths > 0) or non-fatal
+- Aggregated by road width, accident type, speed category, crossing scenario, and lighting condition
+
+Full methodology: [Methodology.md](./Methodology.md)
+
+SQL queries used for data cleaning and analysis: [/sql](./sql)
+
+- `sql/cleaning/` — filtering, duplicate removal, null analysis, value standardization
+- `sql/analysis/` — fatality rate by width, accident type by width, pedestrian fatality by width/speed/scenario/daytime
+
+---
+
+## Dashboard
+
+https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1
+
+---
+
+## Key insight
+
+Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, vehicle speed, and pedestrian exposure — how much pedestrian traffic a road sees and how directly it interacts with vehicles. Pedestrian fatalities peak on 9-11m urban roads, concentrated at mid-block crossings at speeds of 31-50 km/h, with higher risk during daytime.
+
+---
+
+## Findings
+
+#### 1. Fatality risk peaks on medium-width roads (9-11m)
+
+![Fatality rate by road width](./data/fatality_rate_by_width.png)
+
+| Width | Fatality rate |
+|---|---|
+| 9-11 m | 2.41% |
+| 6-8 m | 1.27% |
+| 15+ m | 1.11% |
+
+Medium-width roads likely combine higher speeds with active pedestrian interaction.
+
 #### 2. Pedestrian accidents drive this pattern
 
-<img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/58f05195-c17e-4030-b4ed-7a42939c2e72" />
+![Accident type fatality rate by width](./data/accident_type_fatality_by_width.png)
 
-* Pedestrian fatality rate (9 - 11 m): 5.25%
-* Vehicle collisions: <1%
-* High pedestrian volume amplifies overall risk
-  
-#### Interpretation:
-High pedestrian exposure significantly increases overall fatality risk.
+Pedestrian fatality rate at 9-11m roads reaches 5.25%, compared to under 1% for vehicle collisions in the same width category. High pedestrian exposure significantly increases overall fatality risk.
 
 #### 3. Speed amplifies pedestrian fatality risk
 
-<img width="485" height="328" alt="image" src="https://github.com/user-attachments/assets/b6251313-defc-4058-95c1-c2af82eb22e8" />
+![Pedestrian fatality rate by speed](./data/pedestrian_fatality_by_speed.png)
 
-* Most fatal accidents: 31 - 50 km/h
-* Fatality rate: 5.54% (9 - 11 m)
-* Higher speeds → higher risk, but low sample sizes
-  
-#### Interpretation:
-Moderate urban speeds are sufficient to produce high fatality risk when pedestrian exposure is high.
+Most fatal accidents occur at 31-50 km/h, with a 5.54% fatality rate at 9-11m roads in this speed band. Sample sizes at higher speeds are small. Moderate urban speeds are sufficient to produce high fatality risk when pedestrian exposure is high.
 
-#### 4. Crossing pedestrians are the highest-risk scenario
+#### 4. Mid-block crossings are the highest-risk scenario
 
-<img width="485" height="148" alt="image" src="https://github.com/user-attachments/assets/28e83e13-0b0b-448f-b2a6-8990d67a71af" />
+![Pedestrian fatality rate by crossing scenario](./data/pedestrian_fatality_by_scenario.png)
 
-* Conflict from left → 5.68%
-* Conflict from right → 4.31%
-  
-#### Interpretation:
-Unprotected / mid-block crossings are key risk points.
+- Struck by vehicle from left: 5.68%
+- Struck by vehicle from right: 4.31%
+
+Unprotected, mid-block crossings are key risk points — pedestrians crossing outside signalized intersections face higher fatality rates regardless of approach direction.
 
 #### 5. Daytime conditions show higher fatality rates
 
-<img width="485" height="148" alt="image" src="https://github.com/user-attachments/assets/d65ea72d-2ac7-41b0-9fb3-cb7910939f73" />
+![Fatality rate by time of day](./data/fatality_by_daytime.png)
 
-* Day (Valge aeg): 6.32%
-* Night (Pimeda aeg): 3.73%
-  
-#### Interpretation:
-Likely driven by higher traffic volume and pedestrian activity.
+- Day: 6.32%
+- Night: 3.73%
 
-#### 6. Similar patterns on narrow roads (≤5 m), but less reliable
+Likely driven by higher traffic and pedestrian volume during daytime hours, rather than visibility conditions.
 
-* Fatality rate ~5.4% in some cases
-* Based on smaller samples
-  
-#### Interpretation:
-Patterns exist but are less statistically robust → focus remains on 9 - 11 m roads.
+#### 6. Narrow roads (≤5m) show a similar pattern, less reliably
 
-### Tableau Dashboard
-[https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1](https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseverity/Dashboard1)
+Fatality rate reaches roughly 5.4% in some cases, but on a smaller sample than the 9-11m category. The pattern is directionally consistent but less statistically robust, so the focus remains on 9-11m roads as the primary finding.
 
-### Method Overview
-* Filtered urban accidents (2018–2025)
-* Joined accident data with road width (GIS, 20m join)
-* Classified accidents:
-   - fatal (deaths > 0)
-   - non-fatal
-* Aggregated by:
-   - road width
-   - accident type
-   - speed
-   - scenario
-   - lighting
+---
 
-Full details: [Methodology.md](Methodology.md).
+## Repository structure
 
-### Repository Structure
 ```
 road-width-accident-severity/
 ├── README.md
@@ -122,7 +138,7 @@ road-width-accident-severity/
 ├── data/
 │   ├── raw_data.csv
 │   ├── filtered_data.csv
-│   └── cleaned_data.csv
+│   ├── cleaned_data.csv
 │   └── map_preview.png
 └── sql/
     ├── cleaning/
@@ -138,16 +154,19 @@ road-width-accident-severity/
         ├── 05_pedestrian_fatality_by_scenario.sql
         └── 06_pedestrian_fatality_by_daytime.sql
 ```
-### Limitations
-* Broad speed categories (31 - 50 km/h)
-* Small samples at higher speeds
-* Road width ≠ full road design (lanes, crossings, signals)
-  
-### Author
-Aleksandra Doroshenko
-Junior Data Analyst Portfolio Project
 
-### Acknowledgements
+---
+
+## Limitations
+
+- Speed categories are broad (e.g. 31-50 km/h), which limits precision on the speed-risk relationship.
+- Sample sizes at higher speed bands are small.
+- Road width alone does not capture full road design — lane count, crossing infrastructure, and signal placement are not included in this analysis.
+
+---
+
+## Acknowledgement
+
+AI tools were used during development to help review SQL queries, clarify concepts, and improve documentation. All analysis, data processing, and conclusions were performed and validated by the author.
+
 This project was completed as part of the Data Analysts Advanced Training Program by BCS Koolitus.
-
-AI tools were used during the learning process to help review SQL queries, clarify concepts, and improve documentation. All analysis, data processing, and conclusions were performed and validated by the author.
