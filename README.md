@@ -62,8 +62,8 @@ Full methodology: [Methodology.md](./Methodology.md)
 
 SQL queries used for data cleaning and analysis: [/sql](./sql)
 
-- `sql/cleaning/` — filtering, duplicate removal, null analysis, value standardization
-- `sql/analysis/` — fatality rate by width, accident type by width, pedestrian fatality by width/speed/scenario/daytime
+- `sql/cleaning/` - filtering, duplicate removal, null analysis, value standardization
+- `sql/analysis/` - fatality rate by width, accident type by width, pedestrian fatality by width/speed/scenario/daytime
 
 ---
 
@@ -75,7 +75,7 @@ https://public.tableau.com/app/profile/aleksandra.doroshenko/viz/Roadwidthvsseve
 
 ## Key insight
 
-Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, vehicle speed, and pedestrian exposure — how much pedestrian traffic a road sees and how directly it interacts with vehicles. Pedestrian fatalities peak on 9-11m urban roads, concentrated at mid-block crossings at speeds of 31-50 km/h, with higher risk during daytime.
+Accident severity in urban Estonia is not driven by road width alone, but by the interaction between road width, vehicle speed, and pedestrian exposure - how much pedestrian traffic a road sees and how directly it interacts with vehicles. Pedestrian fatalities peak on 9-11m urban roads, concentrated at mid-block crossings at speeds of 31-50 km/h, with higher risk during daytime.
 
 ---
 
@@ -112,7 +112,7 @@ Most fatal accidents occur at 31-50 km/h, with a 5.54% fatality rate at 9-11m ro
 - Struck by vehicle from left: 5.68%
 - Struck by vehicle from right: 4.31%
 
-Unprotected, mid-block crossings are key risk points — pedestrians crossing outside signalized intersections face higher fatality rates regardless of approach direction.
+Unprotected, mid-block crossings are key risk points - pedestrians crossing outside signalized intersections face higher fatality rates regardless of approach direction.
 
 #### 5. Daytime conditions show higher fatality rates
 
@@ -161,7 +161,7 @@ road-width-accident-severity/
 
 - Speed categories are broad (e.g. 31-50 km/h), which limits precision on the speed-risk relationship.
 - Sample sizes at higher speed bands are small.
-- Road width alone does not capture full road design — lane count, crossing infrastructure, and signal placement are not included in this analysis.
+- Road width alone does not capture full road design - lane count, crossing infrastructure, and signal placement are not included in this analysis.
 
 ---
 
