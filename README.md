@@ -165,6 +165,12 @@ road-width-accident-severity/
 
 ---
 
+## Author
+
+Aleksandra Doroshenko 
+
+---
+
 ## Acknowledgement
 
 AI tools were used during development to help review SQL queries, clarify concepts, and improve documentation. All analysis, data processing, and conclusions were performed and validated by the author.
