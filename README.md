@@ -132,14 +132,22 @@ Fatality rate reaches roughly 5.4% in some cases, but on a smaller sample than t
 ## Repository structure
 
 ```
-road-width-accident-severity/
+road-width-influence-on-accident-severity/
 ├── README.md
 ├── Methodology.md
 ├── data/
 │   ├── raw_data.csv
 │   ├── filtered_data.csv
-│   ├── cleaned_data.csv
-│   └── map_preview.png
+│   └── cleaned_data.csv
+├── images/
+│   ├── accident_type_fatality_by_width.png
+│   ├── fatality_by_daytime.png
+│   ├── fatality_rate_by_width.png
+│   ├── map_estonia.png
+│   ├── map_tallinn.png
+│   ├── map_tartu.png
+│   ├── pedestrian_fatality_by_scenario.png
+│   └── pedestrian_fatality_by_speed.png
 └── sql/
     ├── cleaning/
     │   ├── 01_filtering.sql
