@@ -39,15 +39,15 @@ Is there a relationship between road width and traffic accident severity in urba
 - Accessed: March 2026
 - License: CC BY 3.0
 
-#### Spatial data
+## Map overview
 
-Accident points joined to road width polygons using a QGIS spatial join (20m).
+![Accident points joined to road width, urban Estonia 2018-2025](images/map_estonia.png)
 
-![Map preview](./data/map_preview.png)
+### Zoomed in
 
-### Data lineage
-
-![Data lineage diagram](./data/data_lineage.png)
+| Tartu | Tallinn |
+|---|---|
+| ![Accident points and road width, Tartu](images/map_tartu.png) | ![Accident points and road width, Tallinn](images/map_tallinn.png) |
 
 ---
 
