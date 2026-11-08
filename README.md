@@ -83,7 +83,7 @@ Accident severity in urban Estonia is not driven by road width alone, but by the
 
 #### 1. Fatality risk peaks on medium-width roads (9-11m)
 
-![Fatality rate by road width](./data/fatality_rate_by_width.png)
+![Fatality rate by road width](./images/fatality_rate_by_width.png)
 
 | Width | Fatality rate |
 |---|---|
@@ -95,19 +95,19 @@ Medium-width roads likely combine higher speeds with active pedestrian interacti
 
 #### 2. Pedestrian accidents drive this pattern
 
-![Accident type fatality rate by width](./data/accident_type_fatality_by_width.png)
+![Accident type fatality rate by width](./images/accident_type_fatality_by_width.png)
 
 Pedestrian fatality rate at 9-11m roads reaches 5.25%, compared to under 1% for vehicle collisions in the same width category. High pedestrian exposure significantly increases overall fatality risk.
 
 #### 3. Speed amplifies pedestrian fatality risk
 
-![Pedestrian fatality rate by speed](./data/pedestrian_fatality_by_speed.png)
+![Pedestrian fatality rate by speed](./images/pedestrian_fatality_by_speed.png)
 
 Most fatal accidents occur at 31-50 km/h, with a 5.54% fatality rate at 9-11m roads in this speed band. Sample sizes at higher speeds are small. Moderate urban speeds are sufficient to produce high fatality risk when pedestrian exposure is high.
 
 #### 4. Mid-block crossings are the highest-risk scenario
 
-![Pedestrian fatality rate by crossing scenario](./data/pedestrian_fatality_by_scenario.png)
+![Pedestrian fatality rate by crossing scenario](./images/pedestrian_fatality_by_scenario.png)
 
 - Struck by vehicle from left: 5.68%
 - Struck by vehicle from right: 4.31%
@@ -116,7 +116,7 @@ Unprotected, mid-block crossings are key risk points - pedestrians crossing outs
 
 #### 5. Daytime conditions show higher fatality rates
 
-![Fatality rate by time of day](./data/fatality_by_daytime.png)
+![Fatality rate by time of day](./images/fatality_by_daytime.png)
 
 - Day: 6.32%
 - Night: 3.73%
